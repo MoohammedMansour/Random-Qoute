@@ -1,0 +1,98 @@
+html {
+    scroll-behavior: smooth; 
+    scrollbar-color: #119dfa transparent;
+
+}
+body {
+    margin: 0;
+    color: white;
+    background-color: #3498DB; 
+    transition: background-color 0.5s ease-in-out; 
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+
+}
+
+.quote-container {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto; 
+    max-width: 80%; 
+}
+
+img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-top: 15px;
+    border: 2px solid white; 
+}
+
+.dark-mode {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .quote-container {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.heading-style{
+    color: wheat;
+    font-size: 2rem;
+}
+.favorite-btn {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease; 
+}
+
+.favorite-btn.favorited {
+    color: red;
+}
+
+.favorites-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+    height: 300px; 
+    overflow-y: auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    scrollbar-color: #3498DB transparent;
+}
+
+@media (max-width: 768px) {
+    .quote-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .favorite-btn {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    img {
+        max-width: 100px;
+    }
+
+    .quote-container {
+        padding: 15px;
+    }
+
+    .favorites-section {
+        width: 90%;
+        padding: 10px;
+        height: 250px; 
+    }
+}
